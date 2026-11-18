@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html data-src-ver="a91389fa" lang="zh-CN">
+<head><meta property="og:title" content="民族服饰设计与讲解"><meta property="og:image" content="https://lf3-static.bytednsdoc.com/obj/eden-cn/ylcylz_fsph_ryhs/ljhwZthlaukjlkulzlp/feisuda/avatar/8.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民族服装设计与讲解 · 五十六个民族服饰图鉴</title>
+<meta name="description" content="一部关于中国五十六个民族传统服饰的在线图鉴与设计讲解：色彩语言、图案符号、传统工艺与款式结构。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23141A26'/%3E%3Ccircle cx='32' cy='32' r='24' fill='none' stroke='%23D9B36A' stroke-width='4' stroke-dasharray='6 8'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23B23A2E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="" crossorigin>
+<link rel="stylesheet" href="/fonts/css2?family=Noto+Serif+SC:wght@500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap">
+<style>
+/* ============ 设计令牌 ============ */
+:root{
+  --paper:#F5F0E4; --paper2:#EBE2CD; --paper3:#E4D8BE;
+  --ink:#241F16; --ink-soft:#534A38; --ink-faint:#8B7F68;
+  --vermilion:#A93A2B; --vermilion-soft:#C85B4A; --vermilion-tint:#F3DCD3;
+  --gold:#B08A3F; --gold-soft:#D9B46A; --gold-tint:#F0E3C4;
+  --indigo:#31517A;
+  --dark:#131926; --dark2:#1B2434; --dark3:#232F45; --dark-line:#33405C; --dark-soft:#97A5BE;
+  --radius:12px;
+  --shadow:0 14px 34px rgba(30,24,12,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{
+  font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC",system-ui,sans-serif;
+  background:var(--paper); color:var(--ink); line-height:1.7;
+  font-size:15px; -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.serif{font-family:"Noto Serif SC","Songti SC","SimSun",serif}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold-soft);outline-offset:2px}
+::selection{background:var(--gold);color:#fff}
+
+/* 纸张噪点质感 */
+body::after{
+  content:"";position:fixed;inset:0;z-index:90;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--vermilion);color:#fff;padding:8px 14px;z-index:200}
+.skip-link:focus{left:8px;top:8px}
+
+.container{max-width:1200px;margin:0 auto;padding:0 22px}
+
+/* ============ 导航 ============ */
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:100;
+  background:rgba(19,25,38,.96);color:#E9E2CE;
+  border-bottom:1px solid rgba(217,180,106,.28);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand-mark{width:34px;height:34px;flex:none}
+.brand-name{font-family:"Noto Serif SC",serif;font-weight:700;font-size:16px;letter-spacing:.04em}
+.brand-name b{color:var(--gold-soft);font-weight:900}
+.nav-links{display:none;gap:6px}
+.nav-links a{
+  color:#C9CFDC;text-decoration:none;font-size:14px;padding:6px 12px;border-radius:8px;
+  transition:color .18s,background .18s;
+}
+.nav-links a:hover{color:#fff}
+.nav-links a.active{color:var(--gold-soft);background:rgba(217,180,106,.12)}
+.nav-burger{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:42px;height:42px;background:transparent;border:1px solid var(--dark-line);
+  border-radius:8px;color:#E9E2CE;
+}
+.nav-mobile{
+  display:none;flex-direction:column;gap:4px;padding:8px 0 14px;
+}
+.nav-mobile.open{display:flex}
+.nav-mobile a{color:#C9CFDC;text-decoration:none;padding:10px 8px;border-radius:8px;font-size:15px}
+.nav-mobile a:hover{color:#fff;background:rgba(217,180,106,.10)}
+@media (min-width:860px){
+  .nav-links{display:flex}
+  .nav-burger{display:none}
+  .nav-mobile{display:none!important}
+}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;color:#EFE9D8;
+  background:var(--dark);
+  background-image:
+    radial-gradient(900px 420px at 82% -8%, rgba(185,138,63,.20), transparent 62%),
+    radial-gradient(720px 380px at -6% 108%, rgba(169,58,43,.16), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.016) 0 1px, transparent 1px 42px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.016) 0 1px, transparent 1px 42px);
+  padding:118px 0 64px;
+}
+.hero-ring{
+  position:absolute;right:-140px;top:-120px;width:520px;height:520px;opacity:.5;pointer-events:none;
+}
+.hero-ring circle{fill:none}
+.hero-ring .r1{stroke:var(--gold);stroke-width:1.4;stroke-dasharray:4 10;transform-origin:center;animation:spin 46s linear infinite}
+.hero-ring .r2{stroke:rgba(217,180,106,.55);stroke-width:9;stroke-dasharray:2 16;transform-origin:center;animation:spin 38s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.hero-ring .r1,.hero-ring .r2{animation:none}}
+
+.hero-grid{display:grid;gap:44px;align-items:center}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;color:var(--gold-soft);
+  font-size:13px;letter-spacing:.34em;margin-bottom:18px;
+}
+.hero-eyebrow::before{content:"";width:34px;height:1px;background:var(--gold-soft)}
+.hero h1{
+  font-size:clamp(30px,5.4vw,52px);font-weight:900;line-height:1.22;letter-spacing:.04em;
+  text-wrap:balance;
+}
+.hero h1 .gold{color:var(--gold-soft)}
+.hero-sub{
+  margin-top:18px;color:#B9C2D4;font-size:15px;max-width:520px;line-height:1.9;
+}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  padding:12px 22px;border-radius:10px;font-size:15px;font-weight:600;
+  transition:transform .16s,background .18s,color .18s,border-color .18s;
+}
+.btn-solid{background:var(--vermilion);color:#fff;border:1px solid var(--vermilion)}
+.btn-solid:hover{background:#8F2F22;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--gold-soft);border:1px solid rgba(217,180,106,.55)}
+.btn-ghost:hover{background:rgba(217,180,106,.12);transform:translateY(-2px)}
+
+.hero-stats{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:38px;
+  background:rgba(217,180,106,.18);border:1px solid rgba(217,180,106,.22);border-radius:12px;overflow:hidden;
+}
+.stat{background:rgba(19,25,38,.88);padding:16px 18px}
+.stat b{display:block;font-family:"Noto Serif SC",serif;font-size:26px;font-weight:900;color:var(--gold-soft)}
+.stat span{font-size:12.5px;color:#B9C2D4;letter-spacing:.06em}
+
+.hero-collage{position:relative;justify-self:center}
+.hero-collage .main{
+  width:min(300px,72vw);aspect-ratio:3/4;object-fit:cover;border-radius:14px;
+  border:1px solid rgba(217,180,106,.5);box-shadow:var(--shadow);
+}
+.hero-collage .thumb{position:absolute;width:132px;aspect-ratio:1/1;object-fit:cover;border-radius:12px;border:1px solid rgba(217,180,106,.55);box-shadow:var(--shadow)}
+.hero-collage .t1{left:-52px;bottom:-26px}
+.hero-collage .t2{right:-44px;top:-24px}
+.hero-collage .cap{
+  position:absolute;left:50%;bottom:-40px;transform:translateX(-50%);
+  background:var(--dark2);color:var(--gold-soft);border:1px solid rgba(217,180,106,.45);
+  font-size:12.5px;padding:7px 14px;border-radius:999px;white-space:nowrap;letter-spacing:.08em;
+}
+@media (min-width:960px){
+  .hero-grid{grid-template-columns:1.25fr .9fr}
+  .hero-stats{grid-template-columns:repeat(4,1fr)}
+  .hero{padding:132px 0 96px}
+}
+
+/* ============ 章节标题 ============ */
+.section{padding:72px 0}
+.section-head{margin-bottom:40px;max-width:760px}
+.section-eyebrow{
+  display:inline-flex;align-items:center;gap:12px;color:var(--vermilion);
+  font-size:13px;font-weight:700;letter-spacing:.26em;margin-bottom:12px;
+}
+.section-eyebrow .num{font-family:"Noto Serif SC",serif;font-size:15px;color:var(--gold)}
+.section-head h2{font-size:clamp(25px,3.6vw,36px);font-weight:900;line-height:1.3;text-wrap:balance}
+.section-head p{margin-top:10px;color:var(--ink-soft);font-size:15px;line-height:1.9}
+.on-dark .section-head h2{color:#F1EAD8}
+.on-dark .section-head p{color:var(--dark-soft)}
+
+/* ============ 区域分布 ============ */
+#regions{background:var(--paper)}
+.region-grid{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+@media (min-width:760px){.region-grid{grid-template-columns:repeat(4,1fr)}}
+.region-card{
+  background:#fff;border:1px solid var(--paper3);border-radius:12px;overflow:hidden;
+  box-shadow:0 6px 18px rgba(70,55,25,.05);display:flex;flex-direction:column;
+}
+.region-strip{height:7px;background:var(--rc);opacity:.92}
+.region-body{padding:16px 16px 14px;flex:1;display:flex;flex-direction:column;gap:8px}
+.region-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.region-top h3{font-size:17px;font-weight:900}
+.region-count{font-family:"Noto Serif SC",serif;font-size:13px;color:var(--vermilion);background:var(--vermilion-tint);padding:2px 9px;border-radius:999px;white-space:nowrap}
+.region-desc{font-size:12.5px;color:var(--ink-faint);line-height:1.65}
+.region-bar{height:6px;border-radius:99px;background:var(--paper2);overflow:hidden}
+.region-bar i{display:block;height:100%;border-radius:99px;background:var(--rc)}
+.region-members{display:flex;flex-wrap:wrap;gap:5px;margin-top:2px}
+.region-members span{font-size:11.5px;color:var(--ink-soft);background:var(--paper2);padding:2px 8px;border-radius:6px}
+
+/* ============ 民族服饰库 ============ */
+#library{background:var(--dark);color:#E6E0CF}
+.gallery-grid{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+@media (min-width:860px){.gallery-grid{grid-template-columns:repeat(4,1fr)}}
+.g-item{
+  background:var(--dark2);border:1px solid var(--dark-line);border-radius:12px;overflow:hidden;
+  transition:transform .18s,border-color .18s;
+}
+.g-item:hover{transform:translateY(-3px);border-color:rgba(217,180,106,.5)}
+.g-item img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.g-cap{padding:11px 14px 13px}
+.g-cap b{display:block;font-family:"Noto Serif SC",serif;font-size:15px;color:#F1EAD8}
+.g-cap span{display:block;font-size:12.5px;color:var(--dark-soft);margin-top:2px}
+
+.lib-toolbar{display:flex;flex-direction:column;gap:14px;margin:34px 0 24px}
+.search-wrap{position:relative;max-width:420px;width:100%}
+.search-wrap svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--dark-soft);pointer-events:none}
+.search-wrap input{
+  width:100%;padding:12px 16px 12px 42px;font-size:16px;border-radius:10px;
+  background:var(--dark2);border:1px solid var(--dark-line);color:#F1EAD8;
+}
+.search-wrap input::placeholder{color:#7E8CA6}
+.search-wrap input:focus{border-color:var(--gold);outline:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  padding:7px 14px;border-radius:999px;font-size:13.5px;color:#C9CFDC;
+  background:var(--dark2);border:1px solid var(--dark-line);
+  transition:background .16s,color .16s,border-color .16s;
+}
+.chip:hover{border-color:var(--gold-soft)}
+.chip.active{background:rgba(217,180,106,.16);color:var(--gold-soft);border-color:rgba(217,180,106,.55)}
+
+.lib-grid{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+@media (min-width:640px){.lib-grid{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1024px){.lib-grid{grid-template-columns:repeat(4,1fr)}}
+.lcard{
+  position:relative;display:flex;flex-direction:column;gap:9px;text-align:left;
+  background:var(--dark2);border:1px solid var(--dark-line);border-radius:12px;overflow:hidden;
+  padding:0;color:inherit;cursor:pointer;transition:transform .18s,border-color .18s,background .18s;
+}
+.lcard:hover{transform:translateY(-3px);border-color:rgba(217,180,106,.55);background:var(--dark3)}
+.lcard-strip{height:6px;background:repeating-linear-gradient(90deg,var(--rc) 0 12px,#101724 12px 17px)}
+.lcard-body{padding:4px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.lcard-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.lcard-top h3{font-family:"Noto Serif SC",serif;font-size:20px;font-weight:900;color:#F1EAD8}
+.lcard-region{font-size:11.5px;color:var(--gold-soft);background:rgba(217,180,106,.12);border:1px solid rgba(217,180,106,.35);padding:2px 8px;border-radius:6px;white-space:nowrap}
+.lcard-prov{font-size:12px;color:var(--dark-soft)}
+.lcard-intro{
+  font-size:13.5px;color:#C2CBDB;line-height:1.65;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.lcard-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.lcard-tags span{font-size:11.5px;color:#8FA0BC;background:rgba(151,165,190,.10);padding:2px 9px;border-radius:6px;border:1px solid transparent}
+.lcard-hint{font-size:11.5px;color:#6E7C96;letter-spacing:.12em;text-align:right}
+.lib-empty{display:none;text-align:center;padding:46px 20px;color:var(--dark-soft);font-size:15px;border:1px dashed var(--dark-line);border-radius:12px}
+.lib-empty.show{display:block}
+.lib-note{margin-top:26px;font-size:12.5px;color:#7E8CA6;line-height:1.8}
+
+/* ============ 设计讲解 ============ */
+#design{background:var(--paper)}
+.design-block{margin-bottom:58px}
+.design-block:last-child{margin-bottom:0}
+.design-block h3{
+  font-size:21px;font-weight:900;margin-bottom:6px;display:flex;align-items:center;gap:10px;
+}
+.design-block h3::before{content:"";width:18px;height:2px;background:var(--vermilion);flex:none}
+.design-block .lead{color:var(--ink-soft);font-size:14.5px;margin-bottom:22px}
+
+.color-row{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+@media (max-width:900px){.color-row{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:600px){.color-row{grid-template-columns:1fr}}
+.color-card{
+  background:#fff;border:1px solid var(--paper3);border-radius:12px;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.color-swatch{height:92px}
+.color-card .cbody{padding:13px 15px 15px;display:flex;flex-direction:column;gap:6px}
+.color-card b{font-family:"Noto Serif SC",serif;font-size:15.5px;font-weight:900}
+.color-card .cmeaning{font-size:12.5px;color:var(--ink-soft);line-height:1.6}
+.color-card .cexample{font-size:11.5px;color:var(--ink-faint)}
+
+.motif-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media (min-width:860px){.motif-grid{grid-template-columns:repeat(3,1fr)}}
+.motif-card{
+  background:#fff;border:1px solid var(--paper3);border-radius:12px;padding:20px;
+  display:flex;flex-direction:column;gap:10px;
+}
+.motif-icon{
+  width:52px;height:52px;border-radius:50%;display:grid;place-items:center;flex:none;
+  background:var(--gold-tint);color:var(--gold);
+}
+.motif-card h4{font-family:"Noto Serif SC",serif;font-size:16.5px;font-weight:900}
+.motif-card p{font-size:13.5px;color:var(--ink-soft);line-height:1.7}
+
+.craft-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media (min-width:640px){.craft-grid{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1024px){.craft-grid{grid-template-columns:repeat(4,1fr)}}
+.craft-card{
+  background:#fff;border:1px solid var(--paper3);border-radius:12px;padding:18px;
+  display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden;
+}
+.craft-card::after{
+  content:"";position:absolute;inset:0 0 auto 0;height:4px;
+  background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 16px);opacity:.4;
+}
+.craft-card b{font-family:"Noto Serif SC",serif;font-size:16px;font-weight:900}
+.craft-card p{font-size:13px;color:var(--ink-soft);line-height:1.65}
+.craft-card .cex{font-size:11.5px;color:var(--ink-faint);background:var(--paper2);align-self:flex-start;padding:2px 9px;border-radius:6px}
+
+.struct-row{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+@media (max-width:900px){.struct-row{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:600px){.struct-row{grid-template-columns:1fr}}
+.struct-card{
+  background:#fff;border:1px solid var(--paper3);border-radius:12px;padding:18px;
+  display:flex;flex-direction:column;gap:9px;border-top:4px solid var(--sc);
+}
+.struct-card b{font-family:"Noto Serif SC",serif;font-size:16.5px;font-weight:900}
+.struct-card p{font-size:13px;color:var(--ink-soft);line-height:1.7}
+
+/* ============ 设计工作流 ============ */
+#workflow{background:var(--dark);color:#E6E0CF}
+.steps{position:relative;display:grid;gap:18px;grid-template-columns:repeat(4,1fr)}
+.steps::before{content:"";position:absolute;top:11px;left:12.5%;right:12.5%;height:2px;background:rgba(217,180,106,.35)}
+.step{position:relative;padding-top:44px;text-align:center}
+.step .dot{
+  position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:24px;height:24px;border-radius:50%;background:var(--dark);border:2px solid var(--gold-soft);
+  display:grid;place-items:center;z-index:1;
+}
+.step .dot::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--vermilion)}
+.step b{display:block;font-family:"Noto Serif SC",serif;font-size:17px;font-weight:900;color:var(--gold-soft);margin-bottom:4px}
+.step .st-num{display:block;font-family:"Noto Serif SC",serif;font-size:12px;color:#7E8CA6;letter-spacing:.2em;margin-bottom:8px}
+.step p{font-size:13.5px;color:var(--dark-soft);line-height:1.75;max-width:230px;margin:0 auto}
+@media (max-width:760px){
+  .steps{display:block;padding-left:40px}
+  .steps::before{left:16px;right:auto;top:8px;bottom:8px;width:2px;height:auto}
+  .step{padding:0 0 30px;text-align:left}
+  .step .dot{position:absolute;left:auto;right:auto;left:-32px;top:0;transform:none;width:18px;height:18px}
+  .step .dot::after{width:6px;height:6px}
+  .step p{max-width:none;margin:0}
+}
+
+/* ============ 关于 ============ */
+#about{background:var(--paper)}
+.about-grid{display:grid;gap:26px}
+@media (min-width:860px){.about-grid{grid-template-columns:1.1fr .9fr}}
+.about-card{background:#fff;border:1px solid var(--paper3);border-radius:12px;padding:26px}
+.about-card h3{font-size:19px;font-weight:900;margin-bottom:14px}
+.about-card p{font-size:14px;color:var(--ink-soft);line-height:1.9;margin-bottom:10px}
+.about-card ul{list-style:none;display:grid;gap:8px;margin-top:6px}
+.about-card li{font-size:13.5px;color:var(--ink-soft);padding-left:22px;position:relative;line-height:1.75}
+.about-card li::before{
+  content:"";position:absolute;left:2px;top:9px;width:9px;height:9px;border-radius:2px;
+  background:var(--gold);transform:rotate(45deg);
+}
+
+/* ============ 页脚 ============ */
+.footer{background:#0E1320;color:#8A97AE;padding:34px 0 40px;border-top:1px solid rgba(217,180,106,.2)}
+.footer-inner{display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center}
+.footer .brand-name{color:#E9E2CE;font-size:15px}
+.footer p{font-size:12.5px;line-height:1.9;max-width:640px}
+
+/* ============ 弹层 ============ */
+.modal{
+  position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;
+  background:rgba(9,12,19,.72);padding:18px;
+}
+.modal.open{display:flex}
+.modal-panel{
+  background:var(--paper);color:var(--ink);border-radius:14px;width:min(560px,100%);
+  max-height:86vh;overflow:auto;box-shadow:var(--shadow);position:relative;
+}
+.modal-strip{height:7px;background:var(--rc)}
+.modal-head{padding:22px 26px 12px;display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+.modal-head h3{font-size:26px;font-weight:900}
+.modal-head .mmeta{margin-top:6px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.modal-head .mmeta span{font-size:12.5px;color:var(--ink-faint)}
+.modal-head .mtag{color:var(--vermilion);background:var(--vermilion-tint);padding:2px 10px;border-radius:6px;font-size:12px}
+.modal-close{
+  flex:none;width:38px;height:38px;border-radius:50%;border:1px solid var(--paper3);
+  background:#fff;color:var(--ink-soft);display:grid;place-items:center;
+}
+.modal-close:hover{color:var(--vermilion);border-color:var(--vermilion)}
+.modal-body{padding:4px 26px 22px}
+.modal-body dl{display:grid;gap:0}
+.modal-body .mrow{border-top:1px dashed var(--paper3);padding:12px 0}
+.modal-body .mrow:first-child{border-top:0}
+.modal-body dt{font-size:12.5px;font-weight:700;color:var(--gold);letter-spacing:.14em;margin-bottom:4px}
+.modal-body dd{font-size:14px;color:var(--ink-soft);line-height:1.75}
+.modal-tip{font-size:12px;color:var(--ink-faint);border-top:1px solid var(--paper3);padding-top:14px;margin-top:4px}
+
+/* ============ 返回顶部 ============ */
+.to-top{
+  position:fixed;right:20px;bottom:20px;z-index:110;width:46px;height:46px;border-radius:50%;
+  background:var(--dark2);color:var(--gold-soft);border:1px solid rgba(217,180,106,.5);
+  display:none;place-items:center;box-shadow:var(--shadow);
+}
+.to-top.show{display:grid}
+.to-top:hover{background:var(--dark3);transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#library">跳到民族服饰库</a>
+
+<!-- ================= 导航 ================= -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="返回首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="none" stroke="#D9B36A" stroke-width="3"/>
+        <circle cx="32" cy="32" r="20" fill="none" stroke="#C85B4A" stroke-width="2" stroke-dasharray="5 7"/>
+        <circle cx="32" cy="32" r="8" fill="#B08A3F"/>
+      </svg>
+      <span class="brand-name">锦绣中华<b>·</b>民族服饰设计馆</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#top">首页</a>
+      <a href="#regions">区域分布</a>
+      <a href="#library">民族服饰库</a>
+      <a href="#design">设计讲解</a>
+      <a href="#workflow">设计工作流</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-label="打开菜单" aria-expanded="false" aria-controls="navMobile">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="container nav-mobile" id="navMobile">
+    <a href="#top">首页</a>
+    <a href="#regions">区域分布</a>
+    <a href="#library">民族服饰库</a>
+    <a href="#design">设计讲解</a>
+    <a href="#workflow">设计工作流</a>
+    <a href="#about">关于本站</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- ================= 首屏 ================= -->
+<section class="hero" aria-label="网站首屏">
+  <svg class="hero-ring" viewBox="0 0 520 520" aria-hidden="true">
+    <circle class="r1" cx="260" cy="260" r="230"/>
+    <circle class="r2" cx="260" cy="260" r="176"/>
+  </svg>
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-eyebrow">五十六个民族 · 一部衣冠史</span>
+      <h1>民族服装<span class="gold">设计</span>与<span class="gold">讲解</span><br>穿在身上的中华文明</h1>
+      <p class="hero-sub">从白山黑水的狍皮衣，到帕米尔高原的绣花帽；从云贵山地的百褶裙，到雪域高原的氆氇藏袍——这里收录中国五十六个民族的传统服饰档案，并讲解色彩、图案、工艺与款式背后的设计语言。</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#library">浏览民族服饰库
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#design">了解设计语言</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>56</b><span>个民族服饰档案</span></div>
+        <div class="stat"><b>8</b><span>大文化区域</span></div>
+        <div class="stat"><b>12</b><span>类代表工艺</span></div>
+        <div class="stat"><b>8</b><span>组经典鉴赏</span></div>
+      </div>
+    </div>
+    <div class="hero-collage">
+      <img class="main" src="assets/miao.jpg" alt="身穿红色刺绣盛装、头戴银饰头冠的苗族女子">
+      <img class="thumb t1" src="assets/dai.jpg" alt="身着傣族织锦筒裙的女子">
+      <img class="thumb t2" src="assets/yi.jpg" alt="身着彝族黑白红传统服饰、佩戴银饰的女子">
+      <span class="cap">苗族 · 银饰盛装</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 区域分布 ================= -->
+<section id="regions" class="section" aria-labelledby="regions-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow"><span class="num">壹</span>衣冠地理</span>
+      <h2 id="regions-title">八区衣冠 · 从白山黑水到雪域高原</h2>
+      <p>五十六个民族的服饰并非孤立的标本，而是与山地、草原、绿洲、海岛各自相依的生活美学。按文化地理划分为八大区域，每一区都有相近的材质、剪裁与信仰底色。</p>
+    </div>
+    <div class="region-grid" id="regionGrid"></div>
+  </div>
+</section>
+
+<!-- ================= 民族服饰库 ================= -->
+<section id="library" class="section on-dark" aria-labelledby="library-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow"><span class="num">贰</span>服饰图鉴</span>
+      <h2 id="library-title">经典鉴赏 · 八服入画</h2>
+      <p>八组最具辨识度的民族盛装，一窥织锦、刺绣、银饰与扎染的华彩。</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="g-item">
+        <img src="assets/miao.jpg" alt="苗族女子银饰盛装">
+        <figcaption class="g-cap"><b>苗族 · 银饰盛装</b><span>满身银饰，如星河落衣</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/zang.jpg" alt="身着黑色藏袍的男子立于山间">
+        <figcaption class="g-cap"><b>藏族 · 藏袍</b><span>高原风雪中的温暖长袍</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/uyghur.jpg" alt="维吾尔族艾德莱斯绸大摆裙">
+        <figcaption class="g-cap"><b>维吾尔族 · 艾德莱斯</b><span>扎染绸上流动的绿洲色彩</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/mongol.jpg" alt="身着宝蓝色蒙古袍的蒙古族男子">
+        <figcaption class="g-cap"><b>蒙古族 · 蒙古袍</b><span>马背民族的织锦长袍</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/manchu.jpg" alt="清代红色刺绣满族旗装">
+        <figcaption class="g-cap"><b>满族 · 旗装</b><span>旗袍前身，清宫绣袍</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/korean.jpg" alt="朝鲜族白色长裙舞蹈服饰">
+        <figcaption class="g-cap"><b>朝鲜族 · 白衣长裙</b><span>白衣民族的素洁之美</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/yi.jpg" alt="彝族女子黑白红服饰与银饰">
+        <figcaption class="g-cap"><b>彝族 · 查尔瓦与银饰</b><span>黑红之间，火塘色的浪漫</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="assets/dai.jpg" alt="傣族女子织锦筒裙">
+        <figcaption class="g-cap"><b>傣族 · 筒裙</b><span>热带雨林边的织锦筒裙</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="section-head" style="margin-top:64px">
+      <span class="section-eyebrow"><span class="num">叁</span>全族档案</span>
+      <h2 id="libArchiveTitle">五十六个民族的服饰档案</h2>
+      <p>输入关键词或按区域筛选，点击任意卡片查看该民族的服饰详解：女装、男装、图案寓意、标志配饰与代表工艺。</p>
+    </div>
+    <div class="lib-toolbar">
+      <div class="search-wrap">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="search" id="searchInput" placeholder="搜索民族名称、分布地或工艺，如：苗、贵州、银饰" aria-label="搜索民族服饰">
+      </div>
+      <div class="chips" id="chips" role="group" aria-label="按区域筛选"></div>
+    </div>
+    <div class="lib-grid" id="libGrid"></div>
+    <div class="lib-empty" id="libEmpty">没有找到匹配的民族服饰，换个关键词或清除筛选试试。</div>
+    <p class="lib-note">说明：同一民族在不同支系、不同地区的服饰差异显著，档案以最具代表性的一地样式作概述。点击卡片可查看详解。</p>
+  </div>
+</section>
+
+<!-- ================= 设计讲解 ================= -->
+<section id="design" class="section" aria-labelledby="design-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow"><span class="num">肆</span>设计语言</span>
+      <h2 id="design-title">从色彩到款式：读懂民族服饰的设计语言</h2>
+      <p>民族服饰的美，落在四个层次：色彩寄寓情感，图案书写信仰，工艺决定质感，款式呼应生活。理解这套语言，是当代设计转化民族元素的起点。</p>
+    </div>
+
+    <div class="design-block">
+      <h3>色彩语言</h3>
+      <p class="lead">每一种主色背后，都是一方水土与一群人的价值取向。</p>
+      <div class="color-row">
+        <div class="color-card"><div class="color-swatch" style="background:#B23A2E"></div><div class="cbody"><b>朱红 · 生命与喜气</b><span class="cmeaning">节庆盛装的主调，象征热烈、吉祥与生命力，常见于苗、彝、满等民族的盛装底色。</span><span class="cexample">苗绣嫁衣 · 满族旗装</span></div></div>
+        <div class="color-card"><div class="color-swatch" style="background:#3A5C82"></div><div class="cbody"><b>靛蓝 · 大地与匠心</b><span class="cmeaning">蜡染与扎染的主色，蓝白之间藏着"青出于蓝"的民间染艺智慧。</span><span class="cexample">布依蜡染 · 白族扎染</span></div></div>
+        <div class="color-card"><div class="color-swatch" style="background:#2A2722"></div><div class="cbody"><b>玄黑 · 庄重与守护</b><span class="cmeaning">彝、佤、拉祜等民族尚黑，视其为沉稳、尊贵与护佑之色。</span><span class="cexample">彝族盛装 · 佤族筒裙</span></div></div>
+        <div class="color-card"><div class="color-swatch" style="background:#EFEFE9"></div><div class="cbody"><b>缟白 · 素洁与神圣</b><span class="cmeaning">朝鲜族被称为"白衣民族"，白族尚白，白色寄寓纯净、高洁与美好。</span><span class="cexample">朝鲜族短衣长裙 · 白族服饰</span></div></div>
+        <div class="color-card"><div class="color-swatch" style="background:#C9A35C"></div><div class="cbody"><b>鎏金 · 尊贵与光耀</b><span class="cmeaning">锦缎镶边、织金纹样与镀银饰件，点亮整套衣冠的华彩。</span><span class="cexample">壮锦镶边 · 藏式金银饰</span></div></div>
+      </div>
+    </div>
+
+    <div class="design-block">
+      <h3>图案符号</h3>
+      <p class="lead">衣上的纹样不是装饰，而是可以阅读的"无声史书"。</p>
+      <div class="motif-grid">
+        <div class="motif-card">
+          <span class="motif-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 3c2.5 2.6 4.6 5.4 4.6 8.4A4.6 4.6 0 0 1 12 16a4.6 4.6 0 0 1-4.6-4.6C7.4 8.4 9.5 5.6 12 3z"/><path d="M12 16v5M9.5 21h5"/></svg></span>
+          <h4>龙与瑞兽</h4><p>汉、满、畲等民族绣于袍服与门帘，寓意权威、吉祥与护佑，是最高等级的祝福符号。</p>
+        </div>
+        <div class="motif-card">
+          <span class="motif-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21C8 17.5 5 14.5 5 10.8 5 8 7.2 6 9.6 6c1.5 0 2.6.7 2.4 2 1.4-1.3 2.4-2 4.2-2 2.4 0 4.6 2 4.6 4.8C20.8 14.5 16 17.5 12 21z"/></svg></span>
+          <h4>花鸟草木</h4><p>山茶、石榴、孔雀、阳雀……自然万物皆可入衣，寄托丰饶与生命的祈愿。</p>
+        </div>
+        <div class="motif-card">
+          <span class="motif-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg></span>
+          <h4>日月星辰</h4><p>彝族火纹、纳西七星披肩、瑶族日月纹，把先民对宇宙的想象穿在身上。</p>
+        </div>
+        <div class="motif-card">
+          <span class="motif-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18c3-6 6-6 9 0s6-6 9-6"/><path d="M3 21c3-4 6-4 9 0s6-4 9-4"/></svg></span>
+          <h4>山水梯田</h4><p>哈尼族梯田纹层层叠叠，把家园与劳作织进衣间，是"大地美学"的典范。</p>
+        </div>
+        <div class="motif-card">
+          <span class="motif-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h6v6H4zM14 8h6v6h-6zM4 16h6v4H4zM14 16h6v4h-6z"/></svg></span>
+          <h4>几何回纹</h4><p>壮锦、黎锦、土家西兰卡普的八勾与回纹，以秩序与节奏构成视觉韵律。</p>
+        </div>
+        <div class="motif-card">
+          <span class="motif-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 20V9M12 20V4M20 20v-7"/><path d="M4 15c3-2 5-2 8 0s5-2 8-2"/></svg></span>
+          <h4>吉祥文字</h4><p>福寿万字、水书文字、龙纹"寿"字，以衣为书，把祝愿穿进日常。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-block">
+      <h3>传统工艺</h3>
+      <p class="lead">十二类代表性工艺，构成民族服饰质感与价值的根基。</p>
+      <div class="craft-grid">
+        <div class="craft-card"><b>刺绣</b><p>以针代笔、以线作画，苗绣、羌绣、苏绣各成体系，是流传最广的衣上艺术。</p><span class="cex">苗族 · 羌族</span></div>
+        <div class="craft-card"><b>蜡染</b><p>以蜡封色、入靛染蓝，蜡裂之处开出冰裂纹，蓝白相生。</p><span class="cex">布依族 · 苗族</span></div>
+        <div class="craft-card"><b>扎染</b><p>扎结成花、浸染成形，拆开线结的一刻，独一无二的纹样随之显现。</p><span class="cex">白族 · 维吾尔族</span></div>
+        <div class="craft-card"><b>织锦</b><p>经线纬线交织出华彩，壮锦、黎锦、傣锦与西兰卡普各有母题。</p><span class="cex">壮族 · 黎族 · 土家族</span></div>
+        <div class="craft-card"><b>银饰锻造</b><p>千锤百炼、錾刻成型，银角、银项圈与银锁在光下流转。</p><span class="cex">苗族 · 侗族</span></div>
+        <div class="craft-card"><b>盘扣</b><p>布条盘结成纽，一粒扣便是袖间一朵小花，是中式服装的标志细节。</p><span class="cex">满族 · 汉族</span></div>
+        <div class="craft-card"><b>氆氇织造</b><p>高原羊毛织成的毛料，厚实保暖，是藏袍与邦典的衣料基础。</p><span class="cex">藏族 · 门巴族</span></div>
+        <div class="craft-card"><b>马尾绣</b><p>以马尾裹丝线盘绣，质地坚韧、纹理立体，水族独有。</p><span class="cex">水族</span></div>
+        <div class="craft-card"><b>盘绣</b><p>两针两线密密盘绕，针脚细密如织，色彩如彩虹落衣。</p><span class="cex">土族</span></div>
+        <div class="craft-card"><b>挑花</b><p>依布纹数纱起针，针脚规整、图案对称，朴素中见匠心。</p><span class="cex">瑶族 · 羌族</span></div>
+        <div class="craft-card"><b>鱼皮鞣制</b><p>取鲢鳇鱼皮鞣软缝衣，三江平原的独特衣艺，耐磨防水。</p><span class="cex">赫哲族</span></div>
+        <div class="craft-card"><b>兽皮制作</b><p>狍皮、鹿皮鞣制缝缀，帽靴衣裤一体，是森林猎人的生存智慧。</p><span class="cex">鄂伦春族 · 鄂温克族</span></div>
+      </div>
+    </div>
+
+    <div class="design-block">
+      <h3>款式结构</h3>
+      <p class="lead">从整体形制看民族服饰，可归为五大类型。</p>
+      <div class="struct-row">
+        <div class="struct-card" style="--sc:var(--vermilion)"><b>袍服系</b><p>藏袍、蒙古袍、满族长袍：一袍多用，束带成衣，衣身宽大而功能丰富。</p></div>
+        <div class="struct-card" style="--sc:var(--gold)"><b>裙装系</b><p>百褶裙、筒裙、布拉吉：裙摆的长短与褶数，常是年龄与身份的无声语言。</p></div>
+        <div class="struct-card" style="--sc:var(--indigo)"><b>衣裤系</b><p>对襟、大襟短衣配长裤：轻便利落，适配山地劳作与日常起居。</p></div>
+        <div class="struct-card" style="--sc:#3E7C5A"><b>披挂系</b><p>查尔瓦、独龙毯、七星披肩：整幅织物披挂于身，保暖亦成风景。</p></div>
+        <div class="struct-card" style="--sc:#6B5BAE"><b>头饰冠帽</b><p>旗头、多帕、盖头、银冠：头顶之上，藏着家族、婚否与信仰的全部信息。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 设计工作流 ================= -->
+<section id="workflow" class="section on-dark" aria-labelledby="workflow-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow"><span class="num">伍</span>转化方法</span>
+      <h2 id="workflow-title">从田野到秀场：民族元素的设计工作流</h2>
+      <p>尊重传统，不是照搬符号，而是理解其生成逻辑后的再创造。</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="dot"></span><span class="st-num">STEP 01</span><b>调研采集</b><p>走进村寨与田野，记录服饰的色彩、纹样、结构与真实穿着场景。</p></div>
+      <div class="step"><span class="dot"></span><span class="st-num">STEP 02</span><b>纹样提取</b><p>从刺绣与织锦中提炼母题，归纳配色比例、构图秩序与工艺肌理。</p></div>
+      <div class="step"><span class="dot"></span><span class="st-num">STEP 03</span><b>重构演绎</b><p>结合现代廓形与面料语言，让传统元素在新语境中获得新生。</p></div>
+      <div class="step"><span class="dot"></span><span class="st-num">STEP 04</span><b>应用落地</b><p>成衣、文创、舞台与数字内容，让民族之美被更多人日常看见。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 关于 ================= -->
+<section id="about" class="section" aria-labelledby="about-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow"><span class="num">陆</span>关于本站</span>
+      <h2 id="about-title">一部可以翻阅的衣冠图鉴</h2>
+      <p>本站为民族服饰科普展示网站，希望为传统文化爱好者与学生提供一扇了解民族服饰的窗口。</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>内容说明</h3>
+        <p>民族服饰如同方言，一个民族内部往往还有数十种支系样式。本站在保证信息真实可查的前提下，选取最具代表性的一地样式进行概述，未覆盖全部支系差异。</p>
+        <ul>
+          <li>五十六个民族的档案与分布信息整理自公开资料；</li>
+          <li>色彩、图案与工艺讲解为通识性梳理，方便入门阅读；</li>
+          <li>经典鉴赏图片来自网络公开图源，仅用于学习展示，版权归原作者所有。</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3>如何使用本图鉴</h3>
+        <p>先从区域分布建立整体印象，再进入民族服饰库检索具体民族；想深入了解设计逻辑，可阅读设计讲解与工作流章节。</p>
+        <ul>
+          <li>搜索支持民族名、分布地与工艺关键词；</li>
+          <li>点击任意卡片可查看该民族的服饰详解；</li>
+          <li>适合作为课程资料、设计调研与文化科普的起点。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= 页脚 ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="brand-name">锦绣中华 · 民族服装设计与讲解</span>
+    <p>从白山黑水到雪域高原，五十六个民族的衣冠，是一部穿在身上的中华文明史。</p>
+    <p>© 2026 民族服饰设计馆 · 内容整理自公开资料，图片版权归原作者所有</p>
+  </div>
+</footer>
+
+<!-- ================= 弹层 ================= -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-panel">
+    <div class="modal-strip" id="modalStrip"></div>
+    <div class="modal-head">
+      <div>
+        <h3 id="modalTitle"></h3>
+        <div class="mmeta" id="modalMeta"></div>
+      </div>
+      <button class="modal-close" id="modalClose" aria-label="关闭详情">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <dl id="modalBody"></dl>
+      <p class="modal-tip">同一民族不同支系款式各异，本档案为代表性概述。</p>
+    </div>
+  </div>
+</div>
+
+<button class="to-top" id="toTop" aria-label="返回顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script>
+'use strict';
+/* ============ 数据 ============ */
+var ETHNIC_GROUPS = [
+{id:1,name:"汉族",prov:"全国各地",region:"华夏·中原衣冠",tags:"盘扣 · 刺绣 · 云肩",intro:"以宽袍大袖的衣冠礼制为源，衍生出襦裙、旗袍、长衫等经典形制。",women:"襦裙与旗袍：立领、盘扣、刺绣镶边，线条含蓄而修长。",men:"长衫、马褂与中山装，庄重利落。",motif:"龙凤呈祥、花鸟瑞兽与福寿万字纹。",accessory:"发簪、玉佩、团扇与云肩。",craft:"刺绣、盘扣、织锦与印染。"},
+{id:2,name:"蒙古族",prov:"内蒙古、辽宁、吉林等",region:"北方与帕米尔·游牧",tags:"蒙古袍 · 云纹 · 毡绣",intro:"宽身窄袖的蒙古袍束上腰带，御寒实用与华丽并重。",women:"彩色长袍配腰带与绣花靴，头饰点缀珊瑚与银饰。",men:"蒙古袍扎腰带，佩蒙古刀，脚蹬马靴。",motif:"云纹、吉祥结与草原花木纹。",accessory:"珊瑚银饰、蒙古刀与皮靴。",craft:"毡绣与皮靴制作。"},
+{id:3,name:"回族",prov:"宁夏、甘肃、青海等",region:"西北·丝路绿洲",tags:"白帽 · 盖头 · 素雅",intro:"服饰素净端庄，以小白帽与盖头为标志，色彩内敛。",women:"盖头配长衣，喜素色，缀简洁的刺绣花边。",men:"白色礼拜帽、白衬衫与对襟衣。",motif:"素雅几何与花卉，少浓艳。",accessory:"白帽、盖头与绣花鞋。",craft:"回族刺绣。"},
+{id:4,name:"藏族",prov:"西藏、青海、四川、云南",region:"青藏·雪域高原",tags:"藏袍 · 氆氇 · 邦典",intro:"大襟宽腰的藏袍可日穿夜盖，氆氇与邦典围裙是标志。",women:"藏袍加邦典围裙，戴巴珠头饰与金银珠宝。",men:"藏袍束腰带，佩藏刀，穿藏靴。",motif:"吉祥八宝、云气纹与花卉纹。",accessory:"珊瑚、绿松石、蜜蜡与藏刀。",craft:"氆氇织造与金银镶嵌。"},
+{id:5,name:"维吾尔族",prov:"新疆",region:"西北·丝路绿洲",tags:"艾德莱斯 · 多帕",intro:"艾德莱斯绸扎染出流动的纹样，配多帕花帽与长辫。",women:"艾德莱斯连衣裙、小花帽与长辫。",men:"袷袢长袍束带，头戴绣花帽。",motif:"巴旦木、石榴、花卉与水纹。",accessory:"多帕花帽、辫饰与皮靴。",craft:"艾德莱斯扎染与绣花帽制作。"},
+{id:6,name:"苗族",prov:"贵州、湖南、云南等",region:"西南·云贵山地",tags:"百褶裙 · 银饰 · 苗绣",intro:"百褶裙与满身银饰流光溢彩，被誉为穿在身上的史书。",women:"百褶裙配刺绣围腰，头戴银角与银冠。",men:"对襟短衣、长裤，缠包头帕。",motif:"蝴蝶妈妈、龙鱼鸟兽与花木纹。",accessory:"银角、银项圈、银锁与手镯。",craft:"苗绣、银饰锻造与蜡染。"},
+{id:7,name:"彝族",prov:"云南、四川、贵州",region:"西南·云贵山地",tags:"查尔瓦 · 英雄结 · 百褶裙",intro:"尚黑崇火，查尔瓦披毡与百褶裙最具识别度。",women:"百褶长裙、绣花头帕与银领牌。",men:"黑色紧身衣裤，缠英雄结包头。",motif:"火纹、日月与几何纹。",accessory:"银领牌、手镯与英雄结。",craft:"彝绣、银饰与毛毡制作。"},
+{id:8,name:"壮族",prov:"广西、云南、广东",region:"华南·岭南海岛",tags:"壮锦 · 绣球",intro:"壮锦色彩浓烈，几何与花卉纹样织就一片华彩。",women:"无领对襟短衣、壮锦围裙与包头巾。",men:"对襟衣、宽腿裤与包头巾。",motif:"几何纹、花卉与吉祥文字。",accessory:"绣球、银饰与包头巾。",craft:"壮锦织造与绣球制作。"},
+{id:9,name:"布依族",prov:"贵州",region:"西南·云贵山地",tags:"蜡染 · 铜鼓纹",intro:"靛蓝蜡染衣裙素雅清丽，铜鼓纹传承古意。",women:"蜡染百褶裙、包头帕与绣花鞋。",men:"对襟短衣、长裤与包头。",motif:"铜鼓纹、涡纹与花卉。",accessory:"蜡染头帕与银簪。",craft:"蜡染与扎染。"},
+{id:10,name:"朝鲜族",prov:"吉林、黑龙江、辽宁",region:"东北·白山黑水",tags:"白衣 · 短衣长裙",intro:"素有白衣民族之称，短衣长裙简洁而飘逸。",women:"短上衣配高腰长裙，飘带系结。",men:"短上衣、宽腿裤与坎肩。",motif:"纹样素雅，重在留白。",accessory:"缎带与发饰。",craft:"素色织造与简洁绣饰。"},
+{id:11,name:"满族",prov:"辽宁、吉林、黑龙江",region:"东北·白山黑水",tags:"旗袍 · 马褂 · 旗头",intro:"旗袍源于旗装，马褂、旗头与花盆底鞋自成体系。",women:"旗袍配旗头大拉翅与花盆底旗鞋。",men:"长袍马褂，戴瓜皮帽。",motif:"海水江崖、云纹与蝠纹。",accessory:"旗头、花盆底鞋与玉佩。",craft:"刺绣与盘扣。"},
+{id:12,name:"侗族",prov:"贵州、湖南、广西",region:"西南·云贵山地",tags:"亮布 · 侗锦 · 银饰",intro:"亮布泛紫光，百褶裙配大银项圈，侗锦织就花鸟。",women:"亮布百褶裙、刺绣上衣与银项圈。",men:"对襟衣、宽裤与包头。",motif:"龙凤、花鸟与几何纹。",accessory:"银项圈、银簪与银梳。",craft:"侗锦与亮布制作。"},
+{id:13,name:"瑶族",prov:"广西、湖南、广东、云南",region:"西南·云贵山地",tags:"五彩衣 · 瑶锦 · 头饰",intro:"五彩斑布衣，头饰因地而异，挑花刺绣繁丽。",women:"五彩绣衣、银项圈与多样的头饰。",men:"对襟衣、长裤与包头帕。",motif:"五彩几何、花鸟与长鼓纹。",accessory:"银项圈、头冠与绣袋。",craft:"瑶锦与挑花刺绣。"},
+{id:14,name:"白族",prov:"云南",region:"西南·云贵山地",tags:"扎染 · 金花头饰",intro:"尚白重蓝，大理扎染与金花头饰相映成趣。",women:"白衣配绣花围腰与风花雪月头饰。",men:"白对襟衣、缠头与绣花腰包。",motif:"山茶花、风花雪月与几何纹。",accessory:"金花头饰、银镯与绣花鞋。",craft:"扎染与刺绣。"},
+{id:15,name:"土家族",prov:"湖北、湖南、重庆、贵州",region:"西南·云贵山地",tags:"西兰卡普 · 八勾纹",intro:"西兰卡普织锦斑斓，八勾纹蕴含几何之美。",women:"织锦围裙与披风、绣花鞋。",men:"对襟短衣、宽腿裤与包头。",motif:"八勾、阳雀花与万字纹。",accessory:"织锦带与银饰。",craft:"西兰卡普织锦。"},
+{id:16,name:"哈尼族",prov:"云南",region:"西南·云贵山地",tags:"银泡 · 梯田纹",intro:"服饰如梯田般层层叠叠，缀满银泡与刺绣。",women:"多褶短裙、缀银泡上衣与绣花头帕。",men:"对襟衣、宽裤与包头。",motif:"梯田纹、太阳纹与几何纹。",accessory:"银泡、银链与耳环。",craft:"银泡镶嵌与刺绣。"},
+{id:17,name:"哈萨克族",prov:"新疆、甘肃",region:"北方与帕米尔·游牧",tags:"三叶帽 · 毡绣",intro:"皮草与绣花并重，三叶帽与猫头鹰羽毛别有风情。",women:"绣花长裙、坎肩与花帽头巾。",men:"坎肩、长裤与皮靴，戴三叶帽。",motif:"草原花卉、羊角与羽毛纹。",accessory:"三叶帽、羽毛饰与腰带。",craft:"毡绣与皮草制作。"},
+{id:18,name:"傣族",prov:"云南",region:"西南·云贵山地",tags:"筒裙 · 傣锦 · 孔雀纹",intro:"窄袖短衣配筒裙，孔雀与象纹寄托祥瑞。",women:"窄袖短衣、筒裙与银腰带。",men:"无领对襟衣与长裤。",motif:"孔雀、大象、花卉与波纹。",accessory:"筒帕挎包、银饰与花环。",craft:"傣锦与银饰。"},
+{id:19,name:"黎族",prov:"海南",region:"华南·岭南海岛",tags:"黎锦 · 人形纹",intro:"黎锦被誉为中国纺织史的活化石，筒裙织纹繁丽。",women:"黎锦筒裙、绣花上衣与织锦头饰。",men:"黎锦上衣与短裤。",motif:"人形纹、蛙纹与几何纹。",accessory:"银饰与骨簪。",craft:"黎锦织造。"},
+{id:20,name:"傈僳族",prov:"云南、四川",region:"西南·云贵山地",tags:"火草布 · 百褶裙",intro:"火草麻布衣裙质朴，绣花挎包点缀山野。",women:"火草麻布百褶裙与绣花围腰。",men:"麻布对襟衣与包头。",motif:"蕨草纹与几何纹。",accessory:"绣花挎包与贝片。",craft:"火草布与织麻。"},
+{id:21,name:"佤族",prov:"云南",region:"西南·云贵山地",tags:"牛头纹 · 筒裙",intro:"尚黑崇红，筒裙配大银镯，牛头纹铭刻木鼓信仰。",women:"黑色筒裙、银镯与包头。",men:"无领短衣、黑色长裤与包头。",motif:"牛头纹、木鼓纹与几何纹。",accessory:"大银镯、项圈与烟袋。",craft:"织布与银饰。"},
+{id:22,name:"畲族",prov:"福建、浙江",region:"东南·闽台山海",tags:"凤凰装 · 彩带",intro:"凤凰装与凤冠头饰，彩带山哈带织出祝福。",women:"凤凰装、凤冠与花边围裙。",men:"对襟衣与镶边衫。",motif:"凤凰、花鸟与几何纹。",accessory:"凤冠、彩带与银饰。",craft:"彩带编织与刺绣。"},
+{id:23,name:"高山族",prov:"台湾",region:"东南·闽台山海",tags:"贝珠衣 · 百步蛇纹",intro:"织布与贝珠缀饰华美，百步蛇纹神圣威严。",women:"织锦裙、珠饰与头带。",men:"羽冠、腰裙与贝珠衣。",motif:"百步蛇纹与几何纹。",accessory:"贝珠、羽冠与珠串。",craft:"织布与贝珠缀饰。"},
+{id:24,name:"拉祜族",prov:"云南",region:"西南·云贵山地",tags:"裹腿 · 花边",intro:"喜黑尚青，裹腿包头，花边刺绣点缀衣缘。",women:"长衣、裹腿与绣花头帕。",men:"对襟衣与包头。",motif:"花边几何纹。",accessory:"银泡与串珠。",craft:"刺绣与织布。"},
+{id:25,name:"水族",prov:"贵州",region:"西南·云贵山地",tags:"马尾绣 · 水书",intro:"马尾绣巧夺天工，水书文字纹写进衣间。",women:"马尾绣衣、银项圈与百褶裙。",men:"对襟衣与包头。",motif:"水书纹、花鸟与几何纹。",accessory:"银项圈与银梳。",craft:"马尾绣。"},
+{id:26,name:"东乡族",prov:"甘肃",region:"西北·丝路绿洲",tags:"白帽 · 盖头",intro:"白帽与盖头素净端庄，刺绣功夫见于细节。",women:"盖头与长衣，缀素雅绣花。",men:"白帽与对襟衣。",motif:"简约几何与花卉。",accessory:"盖头与白帽。",craft:"东乡刺绣。"},
+{id:27,name:"纳西族",prov:"云南",region:"西南·云贵山地",tags:"七星披肩",intro:"披星戴月的七星羊皮披肩，是丽江最动人的衣语。",women:"七星羊皮披肩、长裙与绣花包头。",men:"对襟衣与腰带。",motif:"日月七星纹。",accessory:"七星披肩与银饰。",craft:"羊皮披肩制作与刺绣。"},
+{id:28,name:"景颇族",prov:"云南",region:"西南·云贵山地",tags:"银泡 · 筒裙",intro:"全身缀银泡的盛装如星河，目瑙纵歌时最为华美。",women:"银泡衣、筒裙与包头。",men:"包头、长刀与织锦衣。",motif:"目瑙纹与几何纹。",accessory:"银泡、长刀与项圈。",craft:"银泡缀饰与织锦。"},
+{id:29,name:"柯尔克孜族",prov:"新疆",region:"北方与帕米尔·游牧",tags:"白毡帽",intro:"白色毡帽与绣花头饰，山鹰纹寄托刚健。",women:"长裙、盖头与绣花帽。",men:"白毡帽、长袍与腰带。",motif:"山鹰与草原花卉纹。",accessory:"白毡帽与银饰。",craft:"毡帽制作与刺绣。"},
+{id:30,name:"土族",prov:"青海、甘肃",region:"西北·丝路绿洲",tags:"七彩袖 · 盘绣",intro:"七彩袖如彩虹落衣，盘绣针法细密惊艳。",women:"七彩袖衫、盘绣围裙与花袖。",men:"绣花领衣与腰带。",motif:"彩虹、花卉与几何纹。",accessory:"扭达头饰与绣鞋。",craft:"土族盘绣。"},
+{id:31,name:"达斡尔族",prov:"内蒙古、黑龙江",region:"东北·白山黑水",tags:"皮袍 · 烟荷包",intro:"皮衣与绣花并用，烟荷包是传情的信物。",women:"长袍、绣花坎肩与头饰。",men:"皮袍、皮帽与腰带。",motif:"花卉与几何纹。",accessory:"烟荷包与银饰。",craft:"皮草制作与刺绣。"},
+{id:32,name:"仫佬族",prov:"广西",region:"西南·云贵山地",tags:"绣花围裙",intro:"青布衣配绣花围裙，素中见巧。",women:"青布衣、绣花围裙与包头。",men:"对襟衣与宽裤。",motif:"花卉与几何纹。",accessory:"银簪与绣花鞋。",craft:"刺绣。"},
+{id:33,name:"羌族",prov:"四川",region:"西南·云贵山地",tags:"羌绣 · 云云鞋",intro:"羌绣与云云鞋名扬四方，羊皮坎肩御寒护身。",women:"绣花长裙、云云鞋与银饰。",men:"羊皮坎肩、包头与长衫。",motif:"云纹、羊角花与几何纹。",accessory:"云云鞋与银饰。",craft:"羌绣与挑花。"},
+{id:34,name:"布朗族",prov:"云南",region:"西南·云贵山地",tags:"简裙 · 银饰",intro:"简裙与银饰相配，茶山生活织进衣纹。",women:"筒裙、银腰带与包头。",men:"无领衣与宽裤。",motif:"几何纹。",accessory:"银腰带与耳环。",craft:"织布与银饰。"},
+{id:35,name:"撒拉族",prov:"青海",region:"西北·丝路绿洲",tags:"白帽 · 盖头",intro:"白帽盖头配素色长衣，绣花鞋见巧思。",women:"盖头、长衣与绣花鞋。",men:"白帽与对襟衣。",motif:"素雅花卉。",accessory:"盖头与白帽。",craft:"刺绣。"},
+{id:36,name:"毛南族",prov:"广西",region:"华南·岭南海岛",tags:"顶卡花 · 花竹帽",intro:"顶卡花花竹帽精巧如画，是毛南女子的骄傲。",women:"花竹帽、绣花衣与银饰。",men:"对襟衣与宽裤。",motif:"花卉与几何纹。",accessory:"花竹帽与银饰。",craft:"竹编花帽与刺绣。"},
+{id:37,name:"仡佬族",prov:"贵州",region:"西南·云贵山地",tags:"桶裙",intro:"三段式桶裙古韵悠长，织出山地人家的故事。",women:"桶裙、绣花衣与包头。",men:"对襟衣与长裤。",motif:"几何纹。",accessory:"银饰与包头。",craft:"织裙与刺绣。"},
+{id:38,name:"锡伯族",prov:"新疆、辽宁",region:"东北·白山黑水",tags:"长袍 · 坎肩",intro:"长袍坎肩承满风，西迁故土的记忆深藏衣间。",women:"长袍、坎肩与绣花头饰。",men:"长袍、腰带与帽。",motif:"花卉与几何纹。",accessory:"绣花鞋与银饰。",craft:"刺绣。"},
+{id:39,name:"阿昌族",prov:"云南",region:"西南·云贵山地",tags:"包头 · 户撒刀",intro:"包头筒裙配户撒刀，刚柔相济。",women:"绣花包头、筒裙与银饰。",men:"对襟衣、腰带与户撒刀。",motif:"几何纹与花卉。",accessory:"包头、银饰与户撒刀。",craft:"织布与刀具锻制。"},
+{id:40,name:"普米族",prov:"云南",region:"西南·云贵山地",tags:"百褶裙 · 羊皮披肩",intro:"羊皮披肩御风寒，百褶裙摆动山歌。",women:"百褶裙、羊皮披肩与银饰。",men:"麻布衣与腰带。",motif:"几何纹。",accessory:"银饰与珠子。",craft:"织麻与银饰。"},
+{id:41,name:"塔吉克族",prov:"新疆",region:"北方与帕米尔·游牧",tags:"库勒塔帽 · 鹰纹",intro:"帕米尔高原的鹰文化，库勒塔绣花帽高耸别致。",women:"绣花圆帽、长裙与盖头。",men:"黑绒高帽与长袍。",motif:"鹰与花卉纹。",accessory:"库勒塔帽与银饰。",craft:"刺绣与帽饰制作。"},
+{id:42,name:"怒族",prov:"云南",region:"西南·云贵山地",tags:"麻布衣 · 珠饰",intro:"麻布衣裙质朴，珠串点缀怒江两岸。",women:"麻布裙、珠串与包头。",men:"麻布对襟衣。",motif:"几何纹。",accessory:"珠串与银币饰。",craft:"织麻。"},
+{id:43,name:"乌孜别克族",prov:"新疆",region:"北方与帕米尔·游牧",tags:"艾德莱斯 · 多帕",intro:"艾德莱斯绸与多帕花帽，与绿洲生活相映。",women:"艾德莱斯长裙、多帕与头巾。",men:"长袍与腰带。",motif:"花卉与几何纹。",accessory:"多帕与辫饰。",craft:"扎染绸与刺绣。"},
+{id:44,name:"俄罗斯族",prov:"新疆、黑龙江",region:"北方与帕米尔·游牧",tags:"布拉吉 · 头巾",intro:"布拉吉连衣裙与头巾，融合欧陆风情。",women:"布拉吉连衣裙、头巾与绣花围裙。",men:"衬衫、马甲与长裤。",motif:"花卉纹。",accessory:"头巾与围裙。",craft:"缝纫与刺绣。"},
+{id:45,name:"鄂温克族",prov:"内蒙古、黑龙江",region:"东北·白山黑水",tags:"狍皮衣 · 狍头帽",intro:"驯鹿与森林的使鹿部，狍皮衣帽保暖耐磨。",women:"皮袍、绣花领口与头饰。",men:"狍皮衣与狍头帽。",motif:"云卷纹。",accessory:"皮帽与皮手套。",craft:"兽皮鞣制与刺绣。"},
+{id:46,name:"德昂族",prov:"云南",region:"西南·云贵山地",tags:"腰箍 · 筒裙",intro:"藤蔑腰箍束筒裙，古茶山滋养一身青翠。",women:"筒裙、腰箍与包头。",men:"对襟衣与宽裤。",motif:"几何纹。",accessory:"藤蔑腰箍与银饰。",craft:"腰箍编织与织布。"},
+{id:47,name:"保安族",prov:"甘肃",region:"西北·丝路绿洲",tags:"保安腰刀",intro:"白帽盖头配保安腰刀，骁勇与温婉同在。",women:"盖头、绣花衣与长裙。",men:"白帽、对襟衣与保安腰刀。",motif:"花卉与几何纹。",accessory:"保安腰刀与盖头。",craft:"腰刀锻制与刺绣。"},
+{id:48,name:"裕固族",prov:"甘肃",region:"北方与帕米尔·游牧",tags:"红缨帽 · 头面",intro:"红缨帽与长袍头面，牧歌般的色彩。",women:"红缨帽、长袍与头面装饰。",men:"长袍、腰带与帽。",motif:"日月与花卉纹。",accessory:"红缨帽、头面与银饰。",craft:"刺绣与皮毛制作。"},
+{id:49,name:"京族",prov:"广西",region:"华南·岭南海岛",tags:"长衫 · 斗笠",intro:"哈节与海风之间，窄袖长衫轻盈飘逸。",women:"窄袖长衫、斗笠与绣花鞋。",men:"对襟衣与宽裤。",motif:"波纹与花卉。",accessory:"斗笠与珠饰。",craft:"织布与刺绣。"},
+{id:50,name:"塔塔尔族",prov:"新疆",region:"北方与帕米尔·游牧",tags:"绣花帽",intro:"绣花帽与素色长裙，精致而内敛。",women:"绣花帽、长裙与坎肩。",men:"白衬衫、坎肩与帽。",motif:"花卉纹。",accessory:"绣花帽与银饰。",craft:"刺绣。"},
+{id:51,name:"独龙族",prov:"云南",region:"西南·云贵山地",tags:"独龙毯 · 条纹",intro:"独龙毯横条纹如彩虹，披身即是行走的织锦。",women:"独龙毯披身、珠串与包头。",men:"独龙毯裹身。",motif:"彩色横条纹。",accessory:"珠串与项圈。",craft:"织毯。"},
+{id:52,name:"鄂伦春族",prov:"内蒙古、黑龙江",region:"东北·白山黑水",tags:"狍角帽 · 狍皮衣",intro:"兴安岭的猎人，狍角帽与狍皮衣是森林印记。",women:"狍皮袍、绣花滚边与帽。",men:"狍皮衣与狍角帽。",motif:"云纹与鹿角纹。",accessory:"狍角帽与皮饰。",craft:"兽皮制作与刺绣。"},
+{id:53,name:"赫哲族",prov:"黑龙江",region:"东北·白山黑水",tags:"鱼皮衣",intro:"鱼皮衣以鲢鳇鱼皮缝制，是三江平原的独特衣艺。",women:"鱼皮衣、鱼皮裤与绣纹。",men:"鱼皮衣与鱼皮靴。",motif:"水纹与云纹。",accessory:"鱼皮饰品。",craft:"鱼皮鞣制与缝制。"},
+{id:54,name:"门巴族",prov:"西藏",region:"青藏·雪域高原",tags:"氆氇 · 小帽",intro:"氆氇袍与小帽，门隅山地的温厚衣装。",women:"氆氇袍、小帽与围裙。",men:"氆氇长袍与腰带。",motif:"简约几何。",accessory:"小帽与银饰。",craft:"氆氇织造。"},
+{id:55,name:"珞巴族",prov:"西藏",region:"青藏·雪域高原",tags:"兽皮衣 · 藤帽",intro:"兽皮衣与藤帽串珠，珞渝丛林的生命印记。",women:"兽皮衣、串珠与项圈。",men:"兽皮衣与藤帽。",motif:"简约纹样。",accessory:"串珠与藤帽。",craft:"兽皮制作。"},
+{id:56,name:"基诺族",prov:"云南",region:"西南·云贵山地",tags:"三角帽 · 筒裙",intro:"基诺山的三角帽与筒裙，绣出太阳鼓的传说。",women:"绣花三角帽、筒裙与上衣。",men:"无领衣、宽裤与包头。",motif:"太阳纹与几何纹。",accessory:"三角帽与银饰。",craft:"织布与刺绣。"}
+];
+
+var REGION_META = {
+  "华夏·中原衣冠":       {color:"#9E2B25", desc:"礼制衣冠之源，旗袍与长衫从这里走向世界"},
+  "东北·白山黑水":       {color:"#3D5C78", desc:"长白山与黑土地，皮草与旗装的故乡"},
+  "北方与帕米尔·游牧":   {color:"#8C6A35", desc:"马背与高原上的衣冠，袍服腰带与毡帽靴履"},
+  "西北·丝路绿洲":       {color:"#C2563E", desc:"绿洲与丝路交汇，艾德莱斯与花帽流光"},
+  "青藏·雪域高原":       {color:"#A63D57", desc:"高原雪域，氆氇藏袍与邦典围裙"},
+  "西南·云贵山地":       {color:"#3E7C5A", desc:"山地多彩族群，百褶裙、银饰与蜡染刺绣"},
+  "华南·岭南海岛":       {color:"#2E7E86", desc:"岭南与海岛，壮锦黎锦与京族长衫"},
+  "东南·闽台山海":       {color:"#6B5BAE", desc:"山海之间，凤凰装与贝珠衣"}
+};
+var REGION_ORDER = Object.keys(REGION_META);
+
+/* ============ 工具 ============ */
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function byId(id){return document.getElementById(id)}
+
+/* ============ 区域分布 ============ */
+function renderRegions(){
+  var grid = byId("regionGrid");
+  var html = REGION_ORDER.map(function(r){
+    var list = ETHNIC_GROUPS.filter(function(g){return g.region===r});
+    var n = list.length;
+    var names = list.map(function(g){return g.name}).join("");
+    var chips = list.slice(0,26).map(function(g){return '<span>'+esc(g.name)+'</span>'}).join("");
+    var pct = Math.round(n/56*100);
+    return '<article class="region-card" style="--rc:'+REGION_META[r].color+'">'+
+      '<div class="region-strip"></div>'+
+      '<div class="region-body">'+
+        '<div class="region-top"><h3>'+esc(r)+'</h3><span class="region-count">'+n+' 族</span></div>'+
+        '<p class="region-desc">'+esc(REGION_META[r].desc)+'</p>'+
+        '<div class="region-bar" role="img" aria-label="占比 '+pct+'%"><i style="width:'+pct+'%"></i></div>'+
+        '<div class="region-members">'+chips+'</div>'+
+      '</div></article>';
+  }).join("");
+  grid.innerHTML = html;
+}
+
+/* ============ 筛选与搜索 ============ */
+var curRegion = "全部";
+var curQuery = "";
+
+function renderChips(){
+  var wrap = byId("chips");
+  var all = ['<button class="chip'+(curRegion==="全部"?" active":"")+'" data-r="全部">全部 · '+ETHNIC_GROUPS.length+'</button>'];
+  var rest = REGION_ORDER.map(function(r){
+    var n = ETHNIC_GROUPS.filter(function(g){return g.region===r}).length;
+    return '<button class="chip'+(curRegion===r?" active":"")+'" data-r="'+esc(r)+'">'+esc(r)+' · '+n+'</button>';
+  });
+  wrap.innerHTML = all.join("") + rest.join("");
+}
+
+function renderLibrary(){
+  var q = curQuery.trim().toLowerCase();
+  var list = ETHNIC_GROUPS.filter(function(g){
+    if(curRegion!=="全部" && g.region!==curRegion) return false;
+    if(!q) return true;
+    var hay = (g.name+" "+g.prov+" "+g.region+" "+(g.tags||"")+" "+(g.intro||"")).toLowerCase();
+    return hay.indexOf(q) > -1;
+  });
+  var grid = byId("libGrid");
+  if(!list.length){
+    grid.innerHTML = "";
+    byId("libEmpty").classList.add("show");
+    return;
+  }
+  byId("libEmpty").classList.remove("show");
+  var html = list.map(function(g){
+    var rc = REGION_META[g.region] ? REGION_META[g.region].color : "#B08A3F";
+    var tags = (g.tags||"").split("·").map(function(t){return t.trim()}).filter(Boolean)
+      .map(function(t){return '<span>'+esc(t)+'</span>'}).join("");
+    return '<article class="lcard" tabindex="0" role="button" aria-label="查看'+esc(g.name)+'服饰详解" data-id="'+g.id+'">'+
+      '<div class="lcard-strip" style="--rc:'+rc+'"></div>'+
+      '<div class="lcard-body">'+
+        '<div class="lcard-top"><h3>'+esc(g.name)+'</h3><span class="lcard-region">'+esc(g.region)+'</span></div>'+
+        '<span class="lcard-prov">主要分布 · '+esc(g.prov)+'</span>'+
+        '<p class="lcard-intro">'+esc(g.intro)+'</p>'+
+        '<div class="lcard-tags">'+tags+'</div>'+
+        '<span class="lcard-hint">查看详解 →</span>'+
+      '</div></article>';
+  }).join("");
+  grid.innerHTML = html;
+}
+
+/* ============ 弹层 ============ */
+function openModal(g){
+  byId("modalStrip").style.setProperty("--rc", (REGION_META[g.region]||{color:"#B08A3F"}).color);
+  byId("modalTitle").textContent = g.name;
+  byId("modalMeta").innerHTML =
+    '<span>区域 · '+esc(g.region)+'</span>'+
+    '<span>分布 · '+esc(g.prov)+'</span>'+
+    '<span class="mtag">'+esc(g.tags)+'</span>';
+  byId("modalBody").innerHTML =
+    '<div class="mrow"><dt>女装</dt><dd>'+esc(g.women)+'</dd></div>'+
+    '<div class="mrow"><dt>男装</dt><dd>'+esc(g.men)+'</dd></div>'+
+    '<div class="mrow"><dt>图案与寓意</dt><dd>'+esc(g.motif)+'</dd></div>'+
+    '<div class="mrow"><dt>标志配饰</dt><dd>'+esc(g.accessory)+'</dd></div>'+
+    '<div class="mrow"><dt>代表工艺</dt><dd>'+esc(g.craft)+'</dd></div>';
+  var m = byId("modal");
+  m.hidden = false;
+  requestAnimationFrame(function(){m.classList.add("open")});
+  document.body.style.overflow = "hidden";
+}
+function closeModal(){
+  var m = byId("modal");
+  m.classList.remove("open");
+  m.hidden = true;
+  document.body.style.overflow = "";
+}
+
+/* ============ 事件绑定 ============ */
+byId("searchInput").addEventListener("input", function(){curQuery = this.value; renderLibrary();});
+
+byId("chips").addEventListener("click", function(e){
+  var b = e.target.closest(".chip");
+  if(!b) return;
+  curRegion = b.getAttribute("data-r");
+  renderChips(); renderLibrary();
+});
+
+byId("libGrid").addEventListener("click", function(e){
+  var c = e.target.closest(".lcard");
+  if(c) openModal(ETHNIC_GROUPS[c.getAttribute("data-id")-1]);
+});
+byId("libGrid").addEventListener("keydown", function(e){
+  var c = e.target.closest(".lcard");
+  if(c && (e.key==="Enter" || e.key===" ")){e.preventDefault(); openModal(ETHNIC_GROUPS[c.getAttribute("data-id")-1]);}
+});
+byId("modalClose").addEventListener("click", closeModal);
+byId("modal").addEventListener("click", function(e){if(e.target===this) closeModal();});
+document.addEventListener("keydown", function(e){if(e.key==="Escape") closeModal();});
+
+/* 移动端导航 */
+var burger = byId("navBurger"), navMobile = byId("navMobile");
+burger.addEventListener("click", function(){
+  var open = navMobile.classList.toggle("open");
+  burger.setAttribute("aria-expanded", open ? "true":"false");
+  burger.setAttribute("aria-label", open ? "关闭菜单":"打开菜单");
+});
+navMobile.addEventListener("click", function(e){
+  if(e.target.tagName==="A"){navMobile.classList.remove("open");burger.setAttribute("aria-expanded","false");}
+});
+
+/* 返回顶部 */
+var toTop = byId("toTop");
+window.addEventListener("scroll", function(){
+  toTop.classList.toggle("show", window.scrollY > 640);
+}, {passive:true});
+toTop.addEventListener("click", function(){window.scrollTo({top:0,behavior:"smooth"});});
+
+/* 导航高亮 */
+var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav-links a"));
+var sections = navLinks.map(function(a){return document.querySelector(a.getAttribute("href"))}).filter(Boolean);
+var scrollSpy = new IntersectionObserver(function(entries){
+  entries.forEach(function(en){
+    if(en.isIntersecting){
+      var id = "#"+en.target.id;
+      navLinks.forEach(function(a){a.classList.toggle("active", a.getAttribute("href")===id);});
+    }
+  });
+}, {rootMargin:"-40% 0px -55% 0px"});
+sections.forEach(function(s){scrollSpy.observe(s);});
+
+/* ============ 初始化 ============ */
+renderRegions();
+renderChips();
+renderLibrary();
+</script>
+</body>
+</html>
