@@ -340,6 +340,37 @@ body::after{
   background:var(--gold);transform:rotate(45deg);
 }
 
+/* ============ 常见问题 FAQ ============ */
+.faq-list{display:grid;gap:14px;max-width:840px;margin:0 auto}
+.faq-item{
+  background:#fff;border:1px solid var(--paper3);border-radius:12px;overflow:hidden;
+  transition:border-color .2s, box-shadow .2s;
+}
+.faq-item:hover{border-color:var(--gold-soft)}
+.faq-item.open{border-color:var(--gold);box-shadow:var(--shadow)}
+.faq-q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  background:none;border:none;cursor:pointer;text-align:left;
+  padding:20px 24px;font-size:16px;font-weight:700;color:var(--ink);
+  font-family:"Noto Serif SC","Songti SC","SimSun",serif;
+}
+.faq-q .q-num{
+  flex:none;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:var(--gold-tint);color:var(--gold);font-size:13px;font-weight:900;font-family:inherit;
+}
+.faq-q .q-text{flex:1;line-height:1.5}
+.faq-q .q-icon{
+  flex:none;display:inline-flex;align-items:center;justify-content:center;
+  width:24px;height:24px;color:var(--gold);transition:transform .25s;
+}
+.faq-item.open .q-icon{transform:rotate(45deg)}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .32s ease, padding .32s ease;
+  padding:0 24px;
+}
+.faq-item.open .faq-a{max-height:400px;padding:0 24px 20px}
+.faq-a p{font-size:14.5px;color:var(--ink-soft);line-height:1.9;text-align:justify}
+
 /* ============ 页脚 ============ */
 .footer{background:#0E1320;color:#8A97AE;padding:34px 0 40px;border-top:1px solid rgba(217,180,106,.2)}
 .footer-inner{display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center}
@@ -409,6 +440,7 @@ body::after{
       <a href="#library">民族服饰库</a>
       <a href="#design">设计讲解</a>
       <a href="#workflow">设计工作流</a>
+      <a href="#faq">常见问题</a>
       <a href="#about">关于本站</a>
     </nav>
     <button class="nav-burger" id="navBurger" aria-label="打开菜单" aria-expanded="false" aria-controls="navMobile">
@@ -421,6 +453,7 @@ body::after{
     <a href="#library">民族服饰库</a>
     <a href="#design">设计讲解</a>
     <a href="#workflow">设计工作流</a>
+    <a href="#faq">常见问题</a>
     <a href="#about">关于本站</a>
   </div>
 </header>
@@ -664,6 +697,18 @@ body::after{
     </div>
   </div>
 </section>
+
+<!-- ================= 常见问题 ================= -->
+<section id="faq" class="section" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow"><span class="num">柒</span>常见问题</span>
+      <h2 id="faq-title">关于民族服饰，你想知道的</h2>
+      <p>六个高频问题的简明解答，点击可展开查看。</p>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
 </main>
 
 <!-- ================= 页脚 ================= -->
@@ -773,6 +818,16 @@ var REGION_META = {
 };
 var REGION_ORDER = Object.keys(REGION_META);
 
+/* ============ 常见问题数据 ============ */
+var FAQ_DATA = [
+  {q:"哪个民族的银饰最著名？", a:"苗族银饰最为著名。苗族素有\"无银无花\"之说，其银饰以银角、银冠、银项圈、银锁最为标志，整套盛装可达数十斤，寓意财富、安康与家族的祝福。银饰通过錾刻、拉丝、镂雕等工艺精细锻制，常与刺绣百褶裙搭配，被誉为\"穿在身上的史书\"。"},
+  {q:"蜡染和扎染有什么区别？", a:"两者都是传统防染工艺，但原理不同。蜡染是以熔化的蜡液在布上描绘图案后入靛蓝染缸，染后脱蜡，蜡覆盖处因防染而留白，蜡裂处还会渗染出独特的\"冰裂纹\"；扎染则是用线绳把布扎结固定后浸染，拆线后留下扎结处的花纹，纹样更抽象随机。蜡染以布依族、苗族为代表，扎染以白族、维吾尔族为代表。"},
+  {q:"旗袍的\"前身\"是什么？", a:"旗袍的前身是满族的\"旗装\"。清代满族女性穿宽身直筒的长袍，配旗头、花盆底鞋。民国时期，旗装经过改良，收窄腰身、缩短下摆、突出曲线，逐渐演变为现代旗袍，成为中式女性服装的标志。旗袍的立领、盘扣、刺绣镶边都保留了旗装的元素。"},
+  {q:"\"艾德莱斯绸\"是什么？", a:"艾德莱斯绸是维吾尔族特有的一种扎染经线再织造的丝绸，产自新疆和田、喀什等地。它先用扎染方法对经线分段染色，形成自然晕开的色晕，再上机织造，因此纹样如水波流动、变化万千，常配以巴旦木、石榴、花卉等图案，是西北绿洲服饰的标志。"},
+  {q:"藏族的\"氆氇\"与\"邦典\"分别指什么？", a:"\"氆氇\"是藏族用高原羊毛手工织成的毛料，厚实保暖，用于缝制藏袍；\"邦典\"是藏族妇女系在腰间的彩色横条纹围裙，多为五彩或七彩色，既是实用之物，也象征吉祥与成熟。藏族盛装常在藏袍外系邦典，再配珊瑚、绿松石、蜜蜡等饰品。"},
+  {q:"为什么朝鲜族被称为\"白衣民族\"？", a:"朝鲜族崇尚白色，认为白色象征纯净、高洁，日常与节庆着装也多以白色为主，尤其是传统的短上衣配高腰长裙，造型简洁飘逸，因此被称为\"白衣民族\"。这一审美也体现在其服饰\"重在留白、素雅简洁\"的特点上。"}
+];
+
 /* ============ 工具 ============ */
 function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
 function byId(id){return document.getElementById(id)}
@@ -870,6 +925,22 @@ function closeModal(){
   document.body.style.overflow = "";
 }
 
+/* ============ 常见问题 FAQ ============ */
+function renderFaq(){
+  var list = byId("faqList");
+  if(!list) return;
+  list.innerHTML = FAQ_DATA.map(function(item, i){
+    return '<div class="faq-item" data-i="'+i+'">'+
+      '<button class="faq-q" type="button" aria-expanded="false">'+
+        '<span class="q-num">'+(i+1)+'</span>'+
+        '<span class="q-text">'+esc(item.q)+'</span>'+
+        '<span class="q-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>'+
+      '</button>'+
+      '<div class="faq-a"><p>'+esc(item.a)+'</p></div>'+
+    '</div>';
+  }).join("");
+}
+
 /* ============ 事件绑定 ============ */
 byId("searchInput").addEventListener("input", function(){curQuery = this.value; renderLibrary();});
 
@@ -891,6 +962,23 @@ byId("libGrid").addEventListener("keydown", function(e){
 byId("modalClose").addEventListener("click", closeModal);
 byId("modal").addEventListener("click", function(e){if(e.target===this) closeModal();});
 document.addEventListener("keydown", function(e){if(e.key==="Escape") closeModal();});
+
+/* FAQ 展开/折叠 */
+byId("faqList").addEventListener("click", function(e){
+  var btn = e.target.closest(".faq-q");
+  if(!btn) return;
+  var item = btn.parentElement;
+  var isOpen = item.classList.contains("open");
+  // 关闭其他项（手风琴）
+  Array.prototype.forEach.call(byId("faqList").children, function(it){
+    it.classList.remove("open");
+    it.querySelector(".faq-q").setAttribute("aria-expanded", "false");
+  });
+  if(!isOpen){
+    item.classList.add("open");
+    btn.setAttribute("aria-expanded", "true");
+  }
+});
 
 /* 移动端导航 */
 var burger = byId("navBurger"), navMobile = byId("navMobile");
@@ -927,6 +1015,7 @@ sections.forEach(function(s){scrollSpy.observe(s);});
 renderRegions();
 renderChips();
 renderLibrary();
+renderFaq();
 </script>
 </body>
 </html>
